@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
     <title>WIN Newsletter</title>
@@ -16,6 +17,58 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: scroll;
 }
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #ae177c;
+  margin-right: 15px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-size: 28px;
+}
+
+
+
+.main {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+  .main notice {
+    display: none;
+    position: absolute;
+    top: 10px;
+    /* left: -1000px; */
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Shrikhand", cursive;
+    font-size: 22px;
+    border: 3px solid black;
+}
+
+  .content {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #080d3b;
+  
+}
+
+
+
+
 .logo{
     width: 30%;
     margin-top: 10px;
@@ -41,7 +94,7 @@ body{
     background-color: #ae177c;
     border: none;
     width: 20%;
-    height: 35px;
+    height: 45px;
     color: white;
 }
 
@@ -106,6 +159,15 @@ a{
 }
 .heading a{
     color: black;
+}
+
+.fa{
+    color: white;
+}
+
+.chotucontent{
+    width: 60%;
+    margin: 0 auto;
 }
 @media only screen and (max-width: 1200px) {
     body{
@@ -174,9 +236,14 @@ a{
     .website{
         background-color: #ae177c;
         border: none;
-        width: 50%;
-        height: 35px;
+        width: 60%;
+        height: 50px;
         color: white;
+    }
+
+    .chotucontent{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -191,7 +258,11 @@ a{
         <hr>
          <span class="pay"><b> Pay It Forward</b></span> <br>
          <span class="dash"><b>______</b></span>
-         <p >Share your experiences with the community working towards achieving <br> Gender Equality of Workplaces by posting a review and rating, <br> even anonymously. Be the voice for change.  </p>
+         <div class="chotucontent">
+            <p >
+                Share your experiences with the community working towards achieving  Gender Equality of Workplaces by posting a review and rating,  even anonymously. Be the voice for change.  
+            </p>
+        </div>
         <button class="website"><a href="https://womeniconsnetwork.com" class="btn"> Visit Our Website</a></button>
         <br> <br> <br>
     
@@ -341,7 +412,37 @@ a{
         </div>
         <button class="website"><a href="https://womeniconsnetwork.com" class="btn"> Learn More</a></button>
         <hr>
+        <div class="main logos">
+            <div class="notice" id="main-notice">
+              <!-- Turn your sound on and click an icon! -->
+            </div>
+            <div class="content">
+                <div id="circle1" data-note="c" class="circle">
+                        <a href="https://www.facebook.com/womeniconz/">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                </div>
+
+                <div id="circle2" data-note="c-sharp" class="circle">
+                        <a href="https://twitter.com/womeniconz">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                </div>
+
+                <div id="circle3" data-note="d" class="circle">
+                        <a href="https://www.instagram.com/womeniconz/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                </div>
+
+                <div id="circle5" data-note="e-flat" class="circle">
+                    <a href="https://www.linkedin.com/company/womeniconsnetwork/">
+                        <i class="fa fa-linkedin-square"  aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    
+     
 </body>
 </html>
